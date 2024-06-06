@@ -1,8 +1,11 @@
+import Ejercicio_1_sign.SignValidator;
+import Ejercicio_2_sorting.StackSorter;
 import Materia.Cola.Colagenerica;
 import Materia.Cola.cola;
 import Materia.Models.Pantalla;
 import Materia.Pilas.Pilas;
 import Materia.Pilas.PilasGenerica;
+import java.util.Stack;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -71,6 +74,29 @@ public class App {
         System.out.println("Tamaño después de eliminar: " + queueGeneric.getSize());
         System.out.println("Estoy en la pantalla:\t"+queueGeneric.peek().getNombre());
         System.out.println("Tamaño: " + queueGeneric.getSize());
+
+
+        SignValidator validaror = new SignValidator();
+
+        
+        System.out.println(validaror.isValid("([]){}"));
+        System.out.println(validaror.isValid("({)}"));
+        
+
+
+        StackSorter sorter = new StackSorter();
+
+        
+        Stack<Integer> stack = new Stack<>();
+        stack.push(5);
+        stack.push(1);
+        stack.push(4);
+        stack.push(2);
+
+        
+        System.out.println("Stack original: " + stack);
+        sorter.sortStack(stack);
+        System.out.println("Stack ordenado: " + stack);
 
         
 
