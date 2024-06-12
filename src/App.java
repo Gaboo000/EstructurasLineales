@@ -8,9 +8,11 @@ import Materia.Pilas.Pilas;
 import Materia.Pilas.PilasGenerica;
 import java.util.Stack;
 
+import Ejercicio_03_linkedLists.LinkedListEjr;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        /*System.out.println("Hello, World!");
+        System.out.println("Hello, World!");
         Pilas pila = new Pilas();
 
         pila.push(10);
@@ -97,7 +99,7 @@ public class App {
         
         System.out.println("Stack original: " + stack);
         sorter.sortStack(stack);
-        System.out.println("Stack ordenado: " + stack);*/
+        System.out.println("Stack ordenado: " + stack);
 
 
         ListaEnlazada lista = new ListaEnlazada();
@@ -110,6 +112,42 @@ public class App {
         lista.print();
         lista.deleteNode(3);
         lista.print();
+
+
+
+
+        LinkedListEjr linkedList = new LinkedListEjr();
+
+        // Agregar elementos a la lista
+        linkedList.push(6);
+        linkedList.push(7);
+        linkedList.push(5);
+        linkedList.push(2);
+        linkedList.push(1);
+
+        //Imprime solo una posición de la lista
+        /*
+         * Posición a buscar
+         * int posicion = 1;
+         * System.out.println("Posición a buscar: " + posicion);
+         * 
+         * // Obtener el valor en la posición indicada
+         * int valor = linkedList.getByPos(posicion);
+         * System.out.println("Return: " + valor);
+         */
+
+        // Imprimir la lista
+        System.out.println("Lista Enlazada con los datos:");
+        linkedList.printList();
+
+        // Imprimir todas ls posiciones
+        for (int posicion = 0; posicion < linkedList.size(); posicion++) {
+            // Obtener el valor en la posición indicada
+            int valor = linkedList.getByPos(posicion);
+            System.out.println("Posición: " + posicion + " | Valor: " + valor);
+        }
+        
+    
 
 
 

@@ -61,7 +61,7 @@ public class ListaEnlazada {
             
             
         }
-        System.out.println("Fin de la lista :) ▄▀ ");
+        System.out.println("Fin de la lista :) ▀▄▄▄");
         System.out.println("Node ->"+current.value);
     }
 
